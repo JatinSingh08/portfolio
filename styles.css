@@ -3,7 +3,7 @@
 :root {
   --primary-color: #6158ff;
   --secondary-color: #0a00d2;
-  --off-white: #ffd7e5;
+  --off-white: #d5034c;
   --dark-gray: #6b7280;
 }
 
@@ -107,7 +107,9 @@ section:nth-child(odd) {
   /* background: linear-gradient(to right, rgb(247, 230, 238), rgb(194, 194, 253)); */
   /* box-shadow: 1px 0.5px 1px 1px rgb(124, 119, 119); */
   z-index: 1;
-  
+  /* display: flex; */
+  /* flex-direction: column; */
+ 
 }
 
 .section-heading {
@@ -135,7 +137,20 @@ section:nth-child(odd) {
   transform: translate(0, -2px);
   /* box-shadow: black; */
 }
-
+.project-images{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 40%;
+  margin: 2rem;
+}
+.project-images-netflix {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  margin: 20px;
+}
 
 
 /* Footer */
@@ -191,6 +206,12 @@ footer {
   .nav-bar {
       padding: 1rem 1.8rem;
   }
+  .project-images {
+    width: 60%;
+  }
+  .project-images-netflix {
+    width: 90%;
+  }
 }
 @media (max-width:840px) {
   .nav-bar {
@@ -220,6 +241,14 @@ footer {
   .technology-images img:nth-child(3) {
       width: 2.4rem;
   }
+
+  .project-images {
+    width: 80%;
+  }
+  .project-images-netflix {
+    width: 90%;
+  }
+  
   section {
       padding: 1.3rem;
   }
